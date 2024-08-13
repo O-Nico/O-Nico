@@ -30,40 +30,10 @@
 </p>
 
 
-
-<h2>🎮 Jogo de Adivinhação</h2>
-<p>Tente adivinhar o número que estou pensando entre 1 e 100!</p>
-
-<input type="number" id="guessInput" placeholder="Digite seu palpite" />
-<button onclick="checkGuess()">Adivinhar</button>
-
-<p id="resultMessage"></p>
-
-<script>
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
-  let attempts = 0;
-
-  function checkGuess() {
-    const userGuess = parseInt(document.getElementById('guessInput').value);
-    attempts++;
-
-    if (userGuess === randomNumber) {
-      document.getElementById('resultMessage').innerText = 
-        `Parabéns! Você acertou o número ${randomNumber} em ${attempts} tentativas.`;
-    } else if (userGuess < randomNumber) {
-      document.getElementById('resultMessage').innerText = 
-        'Tente um número maior!';
-    } else if (userGuess > randomNumber) {
-      document.getElementById('resultMessage').innerText = 
-        'Tente um número menor!';
-    }
-  }
-</script>
-
-
-
 <p align="center">
  
 <p align="center">
   <strong>Meu portfólio:</strong> <a href="https://github.com/O-Nico">Visite aqui</a>
 </p>
+
+
